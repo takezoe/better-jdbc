@@ -4,16 +4,16 @@ organization := "com.github.takezoe"
 
 version := "1.0.5"
 
-scalaVersion := "2.12.1"
+scalaVersion := "2.12.8"
 
-crossScalaVersions := Seq("2.11.8", "2.12.1")
+crossScalaVersions := Seq("2.11.8", "2.12.8", "2.13.1")
 
 libraryDependencies ++= Seq(
   "com.github.jsqlparser" % "jsqlparser" % "0.9.6",
   "org.scalamacros" %% "resetallattrs"  % "1.0.0",
   "org.scala-lang" % "scala-reflect"  % scalaVersion.value,
   "org.scala-lang" % "scala-compiler" % scalaVersion.value % "provided",
-  "org.scalatest" %% "scalatest" % "3.0.1" % "test",
+  "org.scalatest" %% "scalatest" % "3.0.8" % "test",
   "com.h2database" % "h2" % "1.4.192" % "test"
 )
 

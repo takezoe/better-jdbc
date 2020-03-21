@@ -13,5 +13,10 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Test with SBT
-      run: sbt +test
+    - name: Test with Scala 2.11
+      run: sbt "++ 2.11.8 test"
+    - name: Test with Scala 2.12
+      run: sbt "++ 2.12.8 test"
+    - name: Test with Scala 2.13
+      run: sbt "++ 2.13.0 test"
+
